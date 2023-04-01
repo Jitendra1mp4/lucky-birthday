@@ -28,4 +28,10 @@ function Main(props) {
     </main>
   );
 }
+
+Main.prototypes = {
+  appName: PropTypes.string,
+  userInfo: PropTypes.object,
+};
+
 export default Main;
