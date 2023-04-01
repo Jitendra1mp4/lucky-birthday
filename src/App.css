@@ -1,3 +1,8 @@
+*{
+  box-sizing: border-box;
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
 .App {
   text-align: center;
 }
@@ -9,7 +14,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 10s linear;
   }
 }
 
@@ -35,4 +40,34 @@
   to {
     transform: rotate(360deg);
   }
+}
+#appName{
+  font-size: larger;
+  font-weight: bolder;
+}
+
+#navbar {
+  display: flex;
+  background-color: black;
+  color: whitesmoke;
+  padding: 10px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navpart {
+  font-size: large;
+  display: inline;
+  /* background-color: saddlebrown; */
+}
+.navItem, .navList{
+  display: inline;
+  margin: 10px;
+  padding: 5px;
+}
+#RightSideOfNav{
+ position: relative;
+ right: 0px;
 }
