@@ -71,3 +71,8 @@
  position: relative;
  right: 0px;
 }
+
+.table-users th,td{
+  text-align: center;
+  padding: 2px 6px;
+}

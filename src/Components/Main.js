@@ -1,19 +1,31 @@
-import PropTypes from 'prop-types' 
+import PropTypes from "prop-types";
 
 function Main(props) {
-    return (
-        <main>
-            <div className="container">
-                <h1 id="heading">
-                    Welcome to {props.appName}
-                </h1>
-                <div className="textBox" id='textBox'>
-
-                </div>
-            </div>
-        </main>
-    ) ;
+  return (
+    <main>
+      <div className="container">
+        <h1 id="heading">Welcome to {props.appName}</h1>
+        <div className="div-user-info">
+          <table border="1" className="table-users">
+            <caption>User info</caption>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Profession</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>{props.userInfo.name}</td>
+                <td>{props.userInfo.age}</td>
+                <td>{props.userInfo.profession}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  );
 }
-
-
-export default Main ;
+export default Main;
