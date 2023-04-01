@@ -1,11 +1,11 @@
+import PropTypes from 'prop-types' 
 
-function Main() {
-    const appName = "Texter"
+function Main(props) {
     return (
         <main>
             <div className="container">
                 <h1 id="heading">
-                    Welcome to {appName}
+                    Welcome to {props.appName}
                 </h1>
                 <div className="textBox" id='textBox'>
 
@@ -14,5 +14,6 @@ function Main() {
         </main>
     ) ;
 }
+
 
 export default Main ;

@@ -7,7 +7,7 @@ function App() {
   return (
     <React.Fragment>
       <Navbar />
-      <Main />
+      <Main appName="TextStar"/>
       <Footer />
     </React.Fragment>
   );
