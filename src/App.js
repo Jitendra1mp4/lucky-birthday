@@ -13,7 +13,8 @@ function App() {
   return (
     <React.Fragment>
       <Navbar />
-      <Main appName="TextStar" userInfo={info} />
+      {/* <Main appName="TextStar" userInfo={info} /> */}
+      <Main/>
       <Footer />
     </React.Fragment>
   );

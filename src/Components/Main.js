@@ -34,4 +34,13 @@ Main.prototypes = {
   userInfo: PropTypes.object,
 };
 
+Main.defaultProps = {
+    appName : "BrandName",
+    userInfo: {
+      name: "Sita",
+      age: 21,
+      profession: "Teacher",
+    },
+  };
+
 export default Main;
