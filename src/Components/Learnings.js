@@ -2,20 +2,17 @@
 import { useState } from "react";
 
 function Learnings(props) {
-  // using useState function tha returns an array
-  //  [variable , functionToManipulateValueOFVariableReturned] = useState(INITIAL-value)
-  const [like, setLike] = useState(0);
+  const [user, setUser] = useState("");
 
-  //function called by button
-  function likeClickHandler() {
-    // using function returned by the useState()
-    setLike(like + 1);
+  function inputChangeHandler(event) {
+    console.log(event.target.value);
+    setUser(event.target.value);
   }
   return (
-    <>
-      <h1>Example of useState</h1>
-      <button onClick={likeClickHandler}>Like</button> <code>{like}</code>
-    </>
+    <div className="div-learning" style={{maxWidth : "600px", margin: "auto" , padding : "2rem"}}>
+      <input type="text" onChange={inputChangeHandler} style={{padding : "1rem", fontSize : "1rem"}} />
+      <div className="output" style={{ padding : "1rem", fontSize : "1rem"}} >Hello {user}</div>
+    </div>
   );
 }
 

@@ -16,9 +16,9 @@ function App() {
     <React.Fragment>
       <Navbar />
       {/* <Main appName="TextStar" userInfo={info} /> */}
-      <Main/>
-      <Learnings/>
-      <Footer />
+      {/* <Main /> */}
+      <Learnings />
+      {/* <Footer /> */}
     </React.Fragment>
   );
 }
