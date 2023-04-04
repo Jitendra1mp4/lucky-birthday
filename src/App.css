@@ -1,78 +1,60 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Source+Sans+Pro&display=swap');
+
+* {
   box-sizing: border-box;
-  margin: 0px 0px;
-  padding: 0px 0px;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Lato', sans-serif;
 }
-.App {
+
+.div-learning {
   text-align: center;
+  max-width: 85%;
+  margin: auto;
+  /* padding: 2rem; */
+}
+.div-learning h1 {
+  margin-top: 3rem;
+}
+.para-message {
+  font-style: italic;
+  margin: 0.5rem;
+  padding: 0.5rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.universe-objects-container {
+  margin: 2rem 0px;
+  padding: 2rem 0px;
+  overflow-x: scroll;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 10s linear;
-  }
+.spn-univ-object {
+  margin: 0.3rem 0.5rem;
+  padding: 0.4rem 1rem;
+  font-weight: bold;
+  border: 2px solid gray;
+  border-radius: 0.4rem;
+  background-color: aquamarine;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.list-facts {
+  list-style: none;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-#appName{
-  font-size: larger;
-  font-weight: bolder;
-}
-
-#navbar {
-  display: flex;
-  background-color: black;
-  color: whitesmoke;
-  padding: 10px;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.navpart {
+.div-result {
+  margin-bottom: 2rem;
   font-size: large;
-  display: inline;
-  /* background-color: saddlebrown; */
-}
-.navItem, .navList{
-  display: inline;
-  margin: 10px;
-  padding: 5px;
-}
-#RightSideOfNav{
- position: relative;
- right: 0px;
+  /* font-weight: bold; */
 }
 
-.table-users th,td{
-  text-align: center;
-  padding: 2px 6px;
+.list-item-facts {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #e2d8ff;
+  border: 1px solid gray;
+  border-radius: 0.5rem;
+  text-align: left;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.back-white {
+  background-color: white;
 }
