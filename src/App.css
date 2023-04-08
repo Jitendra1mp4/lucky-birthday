@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Source+Sans+Pro&display=swap');
 :root{
+  --color-primary : aquamarine ;
+  --color-secondary : rgb(139, 216, 255) ;
+  --color-gray : rgb(56, 56, 56) ;
   --std-width : 12rem ;
 }
 * {
@@ -9,13 +12,16 @@
   font-family: 'Lato', sans-serif;
 }
 
-.div-learning {
+footer,.div-learning {
   text-align: center;
   max-width: 85%;
   margin: 1rem auto;
-  background-color: aquamarine;
+  background-color: var(--color-secondary);
   padding: 1rem 1rem;
   border-radius:8px;
+}
+.div-learning{
+  border-bottom-right-radius:3rem;
 }
 .div-learning h1 {
   margin-top: 3rem;
@@ -42,7 +48,8 @@ label,input{
 
 }
 input{
-  border: 1px solid #444;
+  border: none;
+  border: 1px solid var(--color-primary);
   border-radius: 0.5rem;
 }
 
@@ -67,3 +74,50 @@ button{
   display: none;
 }
 
+footer {
+  background-color: var(--color-primary);
+  border-top-left-radius: 3rem;
+  padding: 2rem;
+  position:absolute;
+  left : 8% ;
+  width: 85%;
+  bottom: 0px;
+}
+
+footer ul,
+p,
+div,
+li {
+  text-align: center;
+}
+
+footer .link-social {
+  color: rgb(0, 0, 0);
+  margin: 0px 0.1rem;
+  font-weight: bolder;
+}
+.label {
+  color: var(--color-gray);
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+.container-center {
+  max-width: 600px;
+  margin: auto;
+}
+.brand {
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+  font-size: large;
+  text-shadow: black 2px 2px 25px;
+}
+.list-no-bullet {
+  list-style: none;
+}
+
+.link-text-dec-none {
+  text-decoration: none;
+}
+.list-item-inline {
+  display: inline;
+}
