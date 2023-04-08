@@ -8,7 +8,7 @@ function Learnings(props) {
 
   const inputBirthday = document.querySelector("#input-birthday");
   const inputLuckyNumber = document.querySelector("#input-lucky-number");
-
+  const outputBox = document.querySelector(".div-output");
   function getSum(birthday) {
     let sum = 0;
     for (let i = 0; i < birthday.length; i++) {
@@ -24,8 +24,22 @@ function Learnings(props) {
     const luckyNumber = inputLuckyNumber.value;
 
     const sum = getSum(birthday);
-    if (sum % luckyNumber === 0) setResult("you are lucky");
-    else setResult("you are not that lucky");
+    let isLucky = sum % luckyNumber === 0;
+    if (isLucky) setResult("you are lucky 🤞");
+    else setResult("Sorry! but you are not that lucky 😟");
+
+    setStyle(isLucky);
+  }
+
+  function setStyle(isLucky) {
+    outputBox.style.display = "block";
+    if (isLucky === true) {
+      outputBox.style.color = "green";
+      outputBox.style.backgroundColor = "#dbffda";
+    } else {
+      outputBox.style.color = "red";
+      outputBox.style.backgroundColor = "#ffdbda";
+    }
   }
 
   function birthdayChangeHandler(Event) {
@@ -63,12 +77,12 @@ function Learnings(props) {
           />
         </div>
 
-        <div className="form-part">
+        <div className="">
           <button id="btn-checkLucky" onClick={checkNumberClickHandler}>
-            Check Number
+            Am I lucky?
           </button>
         </div>
-        <div className="output">{result}</div>
+        <div className="div-output">{result}</div>
       </section>
     </div>
   );
