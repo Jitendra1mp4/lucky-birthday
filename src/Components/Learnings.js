@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 function Learnings(props) {
-  const [birthdayValue, setBirthdayValue] = useState("");
+  const [birthdayValue, setBirthdayValue] = useState("29-01-2002");
   const [luckyNumber, setLuckyNumber] = useState(1);
   const [result, setResult] = useState("");
 
@@ -64,6 +64,7 @@ function Learnings(props) {
             name="input-birthday"
             id="input-birthday"
             onInput={birthdayChangeHandler}
+            placeholder={birthdayValue}
           />
         </div>
         <div className="form-part">
