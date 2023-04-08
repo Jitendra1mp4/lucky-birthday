@@ -54,7 +54,7 @@ function Learnings(props) {
     <div className="div-learning">
       <header>
         <h1>Is your Birthday Lucky?</h1>
-        <p style={{fontStyle:"italic"}}>Let us check if it is 😎</p>
+        <p style={{fontStyle:"italic", textAlign:"left"}}>Let us check if it is 😎</p>
       </header>
 
       <section>
